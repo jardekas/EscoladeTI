@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    font-family: 'lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EBF6F6;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 9999;
+    opacity: 0; /* Começa com opacidade 0 para esconder o alerta */
+    transform: translateY(-20px); /* Inicialmente, desloque o alerta para cima */
+    transition: opacity 1s, transform 1s;
+}
+
+.custom-alert.show {
+    opacity: 1; /* Quando a classe 'show' é adicionada, o alerta fica visível */
+    transform: translateY(0); /* Desloque o alerta de volta para a posição original */
+}
+
+.alert-content {
+    position: relative;
+}
+
+#close-button {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+#alert-message {
+    margin: 0;
+    padding-right: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px 0 5px 0;
+    background-image: linear-gradient(to top, rgba(15, 76, 117, 1), rgba(50, 130, 184, 0.13));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    margin: 0;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 1px solid black;
+    width: 238px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 50rem;
+}
+
+input[type="date"] {
+    border: 1px solid black;
+    margin-top: 6px;
+    width: 240px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 50rem;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 50rem;   
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #3282B8, #5FA8FF);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+#login {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #3282B8;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+img {
+    max-width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}

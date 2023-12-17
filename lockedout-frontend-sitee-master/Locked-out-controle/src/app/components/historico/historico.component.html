@@ -1,0 +1,34 @@
+<div id="pagina-historico">
+  <h1 id="titulo" class="fw-bolder">Histórico</h1>
+
+  <mat-form-field>
+    <mat-label>Filtrar por data</mat-label>
+    <input type="text" matInput (keyup)="applyFilter($event)" matInput #input>
+  </mat-form-field>
+
+  <div id="tabela">
+    <table class="table table-hover">
+      <thead class="thead">
+        <tr id="header">
+          <th scope="col">URL</th>
+          <th id="valor" scope="col">Data</th>
+          <th id="valor" scope="col">Horario</th>
+          <th id="valor" scope="col">Site Bloqueado?</th>
+          <th id="valor" scope="col">Bloquear Pagina</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bloqueio of historicos">
+          <td>{{ bloqueio.url }}</td>
+          <td id="valor">{{ bloqueio.data }}</td>
+          <td id="valor">{{ bloqueio.tempo }}</td>
+          <td id="valor">{{ bloqueio.siteBloqueado ? "SIM" : "NÃO" }}</td>
+          <td id="valor"><button (click)="bloquearHistorico(bloqueio.url)"><i class="far fa-ban"></i></button></td>
+        </tr>
+      </tbody>
+    </table>  
+  </div>  
+</div>
+
+
+

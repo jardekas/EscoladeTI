@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "BlockUrl",
+  "version": "3.3.1",
+  "description": "Colocar senhas/bloquear sites",
+  "permissions": ["activeTab", "webRequest", "webRequestBlocking", "tabs", "storage", "history", "<all_urls>", "file://*/*"],
+  "background": {
+    "scripts": ["Js/background.js","Js/conexaoBack.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "Images/logo.png",
+      "48": "Images/logo.png",
+      "128": "Images/logo.png"
+    }
+  },
+  "icons": {
+    "16": "Images/logo.png",
+    "48": "Images/logo.png",
+    "128": "Images/logo.png"
+  }, 
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Js/background.js","Js/conexaoBack.js"]
+    }
+  ]
+}

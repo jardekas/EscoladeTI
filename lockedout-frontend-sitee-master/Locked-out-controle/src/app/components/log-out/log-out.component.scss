@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.pagina-completa{
+    padding-top: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    .conteudo{
+        display: block;
+        padding-left: 5%;
+
+        .parte-superior{
+            display: flex;
+            justify-content: space-between;
+            clear: both;
+
+            .esquerda{
+                justify-content: center;
+                padding-right: 6rem;
+                padding-top: 14rem;
+
+                .escrita{
+                    display: block;
+    
+                    text-wrap: nowrap;
+    
+                    h1{
+                        color: #1B262C;
+    
+                        font-family: "poppins";
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: bolder;
+    
+                        line-height: normal;
+    
+                        margin: 0;
+                    }
+    
+                    h4{
+                        color: #0F4C75;
+    
+                        font-family: "Lato";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+    
+                        line-height: 30px; /* 125% */
+                        letter-spacing: -0.36px;
+    
+                        text-align: center;
+                    }
+                }
+    
+                .logo-lokedout{       
+                    display: flex;
+                    justify-content: center;
+        
+                    #logo{
+                        width: 150px;
+                        height: auto;
+                    }
+                }
+            }
+
+            .imagem-familia{
+                padding-left: 10rem;
+
+                #familia{
+                    width: 550px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+// POPUP
+
+.caixa-popup{
+    margin: 100%;
+
+    max-height: 99%;
+    max-width: 99%;
+    
+    justify-content: center;
+    display: inline;
+
+    .conteudo{
+
+        padding: 1rem;
+        font-size: 25px;
+    
+        .botoes-popup{
+            display: flex;
+            justify-content: center;
+        
+            .botao-popup{
+                font-size: 20px;
+
+                margin-left: 10px;
+                margin-right: 10px;
+    
+                border-radius: 0.5vw;
+                border-style: none;
+    
+                width: 80px;
+                height: 30px;
+    
+                background-image: linear-gradient(to right, #0F4C75, #3282B8);
+                color: white;
+
+                a{
+                    color: white;
+                    font-style: none;
+                }
+            }
+        }
+    }
+}

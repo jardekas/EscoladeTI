@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="/css/TelaLogin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label style="cursor: pointer; color: #007bff;" id="labelEmail">Email</label>
+        /
+        <label style="cursor: pointer;" id="labelTel">Telefone:</label>
+        <input type="email" id="campoLogin" placeholder="endereco@gmail.com" required><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" disabled required style="margin-bottom: 3rem;"><br>
+
+        <button type="submit" id="btnEnviaCodigo">Enviar código verificador</button>
+        <button type="submit" style="display: none;" id="btnLogar">Login</button>
+        
+        <p><a href="TelaCadastro.html" class="cadastrar">Não tem conta ainda? Cadastre-se!</a></p>
+        
+        <img src="/Images/LOGO_COMPLETA.png" alt="LOGO_COMPLETA">
+    </form>
+
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <span id="close-button">&times;</span>
+            <p id="alert-message"></p>
+        </div>
+    </div>
+
+    <script src="/Js/conexaoBack.js"></script>
+    <script src="/Js/TelaLogin.js"></script>
+</body>
+</html>

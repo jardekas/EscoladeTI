@@ -1,0 +1,96 @@
+#pagina-bloqueio{
+  padding-top: 2rem;
+
+  #titulo{
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+
+    .h1 {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .demo-button-container {
+    padding-bottom: 8px;
+    margin-top: 2px;
+  
+    #botaoAdd{
+      color: white;
+      background-image: linear-gradient(to right, #0F4C75, #3282B8)
+    }
+  }
+  
+  #tabela{
+    border: solid 1px;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-color: rgb(211, 211, 211);
+  
+
+    table {
+      width: 100%;
+    }
+
+    mat-icon{
+      color:#1B262C;
+    }
+
+    th{
+      max-width: 100px;
+      background-color: #3282B8;
+      color: white;
+    }
+
+    td{
+      max-width: 30rem;
+      text-align: justify;
+      word-wrap: break-word;
+    }
+  
+  }
+  
+}
+
+// POPUPS
+
+.form{
+  width: auto;
+  margin:20px;
+
+  .inputPopup{
+    width: auto;
+  }
+
+  .mb-3{
+    width: 20rem;
+  }
+
+  .botoes-popup{
+    display: flex;
+    justify-content: end;
+
+    #botao-popup{
+      background-image: linear-gradient(to right, #0F4C75, #3282B8);
+      color:white;
+      padding: 10px;
+
+      margin-left: 10px;
+
+      border-style: none;
+      border-radius: 0.2vw;
+    }
+  }
+}
+

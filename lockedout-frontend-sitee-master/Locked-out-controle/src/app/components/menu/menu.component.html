@@ -1,0 +1,28 @@
+<div id="menu-nav">
+    <div class="menu" [ngClass]="collapsed ? 'menu-collapsed': ''">
+        <div class="logo-container">
+            <button id="bottao-logo" class="logo" (click)="toggleCollapse()">
+                <img id="logo-sidebar" src="../../assets/escudo-vazio.png" alt="" />
+            </button>
+
+            <div id="#bottao-logo" class="logo-texto" *ngIf="collapsed">
+                <button id="bottao-logo" class="logo" (click)="toggleCollapse()">
+                    <img id="nome-logo" src="../../assets/LOGO_SO_ESCRITA.png" alt="" />
+                </button>
+            </div>
+            <!-- <button class="botao-abreFecha" *ngIf="collapsed" (click)="closeMenu()">
+                    <i class="fal fa-times close-icon"></i>    
+                </button> -->
+        </div>
+
+        <ul class="lista-menu">
+            <li class="opcoes-menu" *ngFor="let data of navData">
+                <a class="link-botao" [routerLink]="[data.routerLink]" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <i class="fas  icone-link" [class]="data.icon"></i>
+                    <span class="link-texto" *ngIf="collapsed">{{data.label}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

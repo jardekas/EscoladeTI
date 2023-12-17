@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.pagina-completa{
+    display: block;
+    justify-content: center;
+
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    min-width: 900px;
+
+    .conteudo-pagina{
+        display: flex;
+        justify-content: center;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        max-height: 85%;
+
+        width: 100%;
+        height: 100%;
+
+        .pagina-escrita{
+            position: absolute;
+    
+            padding-top: 15rem;
+            padding-right: 40%;
+
+            text-wrap: balance;
+    
+            margin-right: 50px;
+            height: 50%;
+    
+            h1{
+                color: #1B262C;
+
+                font-family: "poppins";
+                font-size: 50px;
+                font-style: normal;
+                font-weight: bolder;
+
+                line-height: normal;
+
+                text-align: center;
+
+                margin: 0;
+            }
+            
+            h4{
+                color: #0F4C75;
+
+                font-family: "Lato";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+
+                line-height: 30px; /* 125% */
+                letter-spacing: -0.36px;
+
+                text-align: center;
+            }
+    
+            .pagina-botao{
+                display: flex;
+                justify-content: center;
+    
+                button{
+                    font-size: 22px;
+                    color: white;
+                    width: 160px;
+                    margin-left: 60px;
+                    border-radius: 6vw;
+                    background-color: aqua;
+                    position: relative;
+                    background-image: linear-gradient(to right, #0F4C75, #3282B8);
+                    border-style: none;
+    
+                    a{
+                        font-style: none;
+                        color:white;
+                    }
+                }
+    
+                i{
+                    transform: rotate(3.142rad);
+                    font-size: 50px;
+                    color:#1B262C
+                }
+            }
+        }
+    
+        .pagina-imagem{
+            margin-top: 0;
+    
+            width: 90%;
+            height: auto;
+    
+            max-width: fit-content;
+    
+            min-width: fit-content;
+            min-height: fit-content;
+    
+            padding-top: 40px;
+            padding-left: 45%;
+        } 
+
+        
+    }
+    footer{
+        max-height: 15%;
+
+        display: flex;
+        justify-content: end;
+
+        .footer-image{
+            width: 250px;
+            height: auto;
+        }
+    
+    }
+}

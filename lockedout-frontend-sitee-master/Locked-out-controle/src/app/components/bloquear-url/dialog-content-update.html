@@ -1,0 +1,51 @@
+<div class="form">
+
+  <h2 class="fw-bolder">Update bloqueio</h2>
+
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Digite a url do site</label>
+    <div class="input-group">
+      <input class="inputPopup" type="text" class="form-control" placeholder="{{this.b.url}}" id="url"
+        aria-describedby="basic-addon3 basic-addon4">
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Horário inicio</label>
+    <div class="input-group input-group-sm mb-3">
+      <input class="inputPopup" id="tempoInicio" type="time" class="form-control" aria-label="Username" value="{{this.b.horarioInicio}}"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Horário fim</label>
+    <div class="input-group input-group-sm mb-3">
+      <input class="inputPopup" id="tempoFim" type="time" class="form-control"  aria-label="Username" value="{{this.b.horarioFim}}"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Data inicio</label>
+    <div class="input-group input-group-sm mb-3">
+      <input class="inputPopup" id="dataInicio" class="form-control" type="date" aria-label="Username" value="{{this.b.diaInicio}}"
+        aria-describedby="inputGroup-sizing-sm"><br>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Data fim</label>
+    <div class="input-group input-group-sm mb-3">
+      <input class="inputPopup" id="dataFim" class="form-control" type="date" aria-label="Username" value="{{this.b.diaFim}}"
+        aria-describedby="inputGroup-sizing-sm"><br>
+    </div>
+  </div>
+
+  <div class="botoes-popup">
+    <button id="botao-popup" type="button" (click)="onNoClick()">Cancelar</button>
+    <button id="botao-popup" type="button" (click)="onClick()">Salvar</button>
+  </div>
+</div>

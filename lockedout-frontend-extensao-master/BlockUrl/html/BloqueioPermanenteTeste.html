@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+  <title>Site Bloqueado</title>
+  <link rel="stylesheet" href="/css/BloqueioPermanente.css">
+</head>
+
+<body>
+
+  <img src="/Images/ImgTelaBloqueio.png" id="banner" alt="">
+
+  <div class="container">
+    <h1 id="tituloPrincipal">Essa página foi bloqueada!</h1>
+    <p id="subtitulo">Esta página foi automaticamente bloqueada ou selecionada por seus pais...</p>
+    
+    <form id="loginForm">
+
+      <div id="motivoBloqueio">
+        <label for="motivo">Motivo de bloqueio:</label>
+        <input type="text" id="motivo" name="motivo">
+      </div>
+
+      <div class="divAcesso">
+        <input type="password" id="senha" placeholder="Digite a senha enviada em seu e-mail ou telefone." required class="user-password">
+      </div>
+
+      <div class="divAcesso">
+        <button type="submit" class="btn" style="width: 30%;">Desbloquear</button>
+        <button class="btn" style="margin-right: 0; width: 54%;">Enviar senha novamente</button>
+      </div>
+
+      <div class="divAcesso">
+        <a href="">Enviar notificação para desbloqueio</a>
+      </div>
+
+      <div id="">
+
+      </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <img src="/Images/logo_completa.png" id="logoFooter" alt="">
+  </footer>
+
+  <script src="/Js/BloqueioPermanente.js"></script>
+
+</body>
+
+</html>

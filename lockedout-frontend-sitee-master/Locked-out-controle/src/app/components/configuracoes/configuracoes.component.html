@@ -1,0 +1,67 @@
+<div class="pagina">
+    <div class="parte-superior">
+        <img id="logo" src="../../assets/LOGO_COMPLETA.png" alt="" />
+        <form id="upper-form" action="#">
+            <div class="div-user">
+                <label for="fname">Email</label><br>
+                <input class="input-user" required type="email" id="email" name="email" placeholder="Seu Email..." value="">
+            </div>
+            <div class="div-user">
+                <label for="lname">Telefone</label><br>
+                <input class="input-user" type="tel" id="telefone" name="telefone" placeholder="Seu Telefone..." value="">
+            </div>
+        </form>
+    </div>
+    <div class="parte-media">
+        <div id="lower-form">
+            <div class="feedback-form">
+                <label for="lname">Deseja nos passar algum feedback sobre o sistema?</label><br>
+                <textarea class="input-user feedback-input" type="text" id="feedback" name="feedback"
+                    placeholder="Digite aqui..."></textarea>
+            </div>
+            <form>
+                <fieldset id="radio-dir">
+                    <label for="lname" style="font-weight: bold;">Notificações </label>
+                    <i matTooltip="Onde voce deseja receber suas Notificações?" class="far fa-info-circle"></i><br>
+
+                    <input type="radio" id="html" name="notificacao" value=0>
+                    <label for="html">SMS</label><br>
+
+                    <input type="radio" id="css" name="notificacao" value=1>
+                    <label for="css">Email</label><br>
+
+                    <input type="radio" id="javascript" name="notificacao" value=2>
+                    <label for="javascript">SMS e Email</label><br>
+
+                    <input type="radio" id="javascript" name="notificacao" value=3>
+                    <label for="javascript">Não receber</label>
+                </fieldset>
+
+                <fieldset id="radio-esq">
+                    <label for="lname" style="font-weight: bold;">Senha </label>
+                    <i matTooltip="Onde voce deseja receber a senha de acesso?" class="far fa-info-circle"></i><br>
+
+                    <input type="radio" id="html" name="senha" value="false">
+                    <label for="html">SMS</label><br>
+
+                    <input type="radio" id="css" name="senha" value="true">
+                    <label for="css">Email</label><br>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="parte-inferior">
+        <a id="link" href="/perfil">minhas informações</a><br>
+        <button>
+            <input type="button" mat-button (click)="onSubmitFeedback()" class="input-user botao-submit" value="Enviar feedback">    
+        </button>
+        <button>
+            <input type="button" (click)="resetarInputs()" class="input-user botao-submit" value="Reset">    
+        </button>
+        <button>
+            <input type="button" mat-raised-button (click)="onSubmit()" class="input-user botao-submit" value="Salvar alterações">    
+        </button>
+        
+    </div>
+    
+</div>

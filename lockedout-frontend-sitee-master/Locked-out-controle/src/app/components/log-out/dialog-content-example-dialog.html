@@ -1,0 +1,13 @@
+<div class="caixa-popup">
+    <div class="conteudo">
+        <div class="texto-popup" mat-dialog-content>
+            Gostaria de Desconectar?
+        </div><br>
+        <div class="botoes-popup" mat-dialog-actions>
+            <button class="botao-popup" (click)="onNoClick()" mat-button mat-dialog-close>Não</button>
+            <button class="botao-popup" (click)="onClick()" mat-button mat-dialog-close cdkFocusInitial>
+                <a href="/nao-logado">Sim</a>
+            </button>
+        </div> 
+    </div>
+</div>

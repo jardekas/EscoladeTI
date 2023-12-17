@@ -1,0 +1,131 @@
+.menu{
+    background: white;
+    transition: all .5s ease;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    box-shadow: 0.063rem 0 1.25rem 0 black;
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+        width: auto;
+        border-bottom: solid 1.5px #1B262C;
+
+        .logo{
+            background: #fff;
+            text-align: center;
+            width: 3rem;
+            min-width: 3rem;
+            border-radius: 0.313rem;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+        }
+        .logo-texto{
+            font-size:15px;
+            font-weight:900;
+            color: black;
+        }
+        .botao-abreFecha{
+            margin-left:0px;
+            cursor:pointer;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border:none;
+
+            .fa-times{
+
+                color: black;
+                font-size: 24px;
+                
+            }
+        }
+    }
+}
+
+
+#logo-sidebar{
+    width: 40px;
+    height: auto;
+}
+
+#bottao-logo{
+    background-color: transparent;
+    width: auto;
+    height: 75px;
+}
+
+#nome-logo{
+    background-color: transparent;
+    height: 30px;
+    width: auto;
+}
+
+.menu-collapsed {
+    width: 13rem;
+}
+
+.lista-menu{
+    list-style: none;
+    padding: 0.938rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    cursor:pointer;
+
+    .opcoes-menu{
+        width: 100%;
+        margin-bottom: 0.625rem;
+        padding-top:20px;
+
+        .link-botao{
+            display: flex;
+            align-items: center;
+            height: 2rem;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 0.625rem;
+            transition: all .3s ease;
+            padding-bottom:5px;
+            padding-top:5px;
+            
+            &.active{
+                color:white;
+            }
+
+            .icone-link{
+                font-size: 20px;
+                width: 2.5rem;
+                min-width: 2rem;
+                margin: 0 0.1rem;
+                text-align:center;
+            }
+                .link-texto{
+                    margin-left: 0.5rem;
+                    font-size: 15px;
+            }
+        }
+    }
+
+    .opcoes-menu:hover{
+        .link-botao{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.active{
+    background-color: #1B262C;
+    .icone-link,
+    .link-text{
+        color: white;
+    }   
+}

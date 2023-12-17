@@ -1,0 +1,31 @@
+git --
+
+git add .
+
+git commit -m "mensagem"
+
+git push
+
+dependencias --
+npm install -g @angular/cli (se não funcionar coloque npx)
+
+se voce quiser gerar um novo projeto (obs: não precisa) --
+ng new Locked-out-controle (se isso não funcionar use: npx ng new Locked-out-controle)
+
+coloque esse comando em seguida --
+cd Locked-out-controle
+
+dependencias --
+ng add @angular/material (se não funcionar coloque npx na frente)
+
+gerando as pastas das telas -- 
+
+npx ng g c Tela-inicial
+
+npx ng g c Bloquear-url
+
+npx ng g c Historico
+
+npx ng g c Configuracoes 
+
+npx ng g c Sair 

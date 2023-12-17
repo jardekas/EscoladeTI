@@ -1,0 +1,54 @@
+<div id="pagina-bloqueio">
+  <h1 id="titulo">Sites Bloqueados</h1>
+  <div class="demo-button-container">
+    <mat-form-field>
+      <mat-label>Filtrar por data</mat-label>
+      <input type="date" matInput (keyup)="applyFilter($event)" matInput #input>
+    </mat-form-field>
+
+    <button id="botaoAdd" mat-raised-button (click)="openDialog()">
+      + Adicionar
+    </button>
+
+  </div>
+
+  <div id="tabela">
+    <table class="table table-hover">
+      <thead class="thead">
+        <tr id="header">
+          <th>URL</th>
+          <th>Data</th>
+          <th>Horario</th>
+          <th>Editar</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let bloqueio of bloqueios">
+          <td>{{ bloqueio.url }}</td>
+          <td>
+            {{
+            bloqueio.diaInicio != "" && bloqueio.diaFim != "" ? bloqueio.diaInicio+" até "+bloqueio.diaFim : "-"
+            }}
+          </td>
+          <td>
+            {{
+            bloqueio.horarioInicio != "" && bloqueio.horarioFim != "" ? (bloqueio.horarioInicio+" às "+bloqueio.horarioFim) : "-"
+            }}
+          </td>
+          <td>
+            <button mat-icon-button class="demo-button"
+              (click)="openDialogUpdate(bloqueio)"><mat-icon>edit</mat-icon></button>
+          </td>
+          <td>
+            <button mat-icon-button [disabled]="!dataSource.length" class="demo-button"
+              (click)="deleteBloqueio(bloqueio.idBloqueio)"><mat-icon>delete</mat-icon></button>
+          </td>
+          
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>

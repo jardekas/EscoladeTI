@@ -1,0 +1,49 @@
+.pagina-inicial{
+   padding-top: 2rem;
+   
+   #titulo{
+      text-rendering: optimizeLegibility;
+      font-weight: 500;
+   
+      .h1 {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+   
+   .graficos-geral {
+      max-width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      
+      padding-left: 1rem;
+      padding-right: 1.5rem;
+      padding-top:1rem; 
+   
+      min-width: 1230px;
+      
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(211, 211, 211);
+      border-radius: 1vw;
+   
+      #parte-superior{
+         display: flex;
+         justify-content: center;
+      }
+   
+      #parte-media{
+         display: flex;
+         justify-content: center;
+      }
+   
+      #parte-inferior{
+         justify-content: center;
+      }
+   }
+
+}
+
+

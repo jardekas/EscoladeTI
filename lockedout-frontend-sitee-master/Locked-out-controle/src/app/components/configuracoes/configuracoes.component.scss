@@ -1,0 +1,183 @@
+* {
+    color: rgb(106, 106, 106);
+
+}
+
+.pagina {
+    padding-top: 2rem;
+
+    .parte-superior {
+        display: flex;
+        padding-bottom: 30px;
+        justify-content: center;
+
+        #logo {
+            width: 300px;
+            height: auto;
+        }
+        
+        #upper-form {
+            display: flex;
+            padding-top: 30px;
+            padding-left: 50px;
+        
+            .div-user {
+                padding-right: 30px;
+    
+                .input-user {
+                    border-radius: 0.3vw;
+                    border: 1px solid #ccc;
+                    border-color: rgb(197, 197, 197);
+                    padding: 10px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    background-color: rgb(243, 243, 243);
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .parte-media {
+        display: flex;
+        justify-content: center;
+
+        #lower-form {
+            display: flex;
+
+            .feedback-texto{
+                padding: 20px;
+            }
+
+            .feedback-input {
+                width: 750px;
+                height: 300px;
+                background-color: rgb(243, 243, 243);
+
+                border-color: #ccc;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 0.5vw;
+            }
+
+            form{
+                padding-left: 70px;
+                display: flex;
+
+                padding-top: 1.5rem;
+
+                fieldset{
+                    border: transparent;
+                }
+
+                #radio-esq{ 
+                    margin-left: 60px;
+                }
+
+                #radio-direita {
+                    padding-left: 50px;
+                }
+
+                .bttn-info{
+                    border-style: none;
+                    background-color: transparent;
+                    width: 2px;
+                    height: 1px;
+                
+                    &:hover {
+                        background-color: #e6e6e6;
+                        border-radius: 1vw;
+                    }
+                
+                    &:active {
+                        background-color: #000;
+                    }
+                }
+
+                i {
+                    color: rgb(255, 132, 37)
+                }
+            }
+        }
+    }
+    
+    .parte-inferior {
+        padding: 0;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        #link{
+            display: flex;
+            justify-content: center;
+            padding-top: 0.6rem;
+            padding-right: 15rem;
+            color:#0F4C75;
+            text-decoration: underline;
+        }
+    
+        button{
+            height: 40px;
+            color: white;
+            width: 160px;
+            margin-left: 60px;
+            border-radius: 6vw;
+            background-color: aqua;
+            position: relative;
+            background-image: linear-gradient(to right, #0F4C75, #3282B8);
+            border-style: none;
+
+            .botao-submit {
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+                border:transparent;
+                color: white;
+                width: 120px;
+                position: relative;
+            }  
+
+        }
+    }
+}
+
+//------------
+
+.caixa-popup{
+    margin: 100%;
+
+    justify-content: center;
+    display: inline;
+
+    .texto-popup{
+        padding-left: 10px;
+    }   
+
+    .botoes-popup{
+        display: flex;
+        justify-content: center;
+    
+        .botao-popup{
+            margin-left: 10px;
+            margin-right: 10px;
+
+            border-radius: 0.5vw;
+            border-style: none;
+
+            width: 80px;
+            height: 30px;
+
+            background-image: linear-gradient(to right, #0F4C75, #3282B8);
+            color: white;
+        }
+    }
+    
+}
+
+
+
+
+
+
+

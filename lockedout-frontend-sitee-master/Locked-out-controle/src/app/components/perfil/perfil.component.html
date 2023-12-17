@@ -1,0 +1,37 @@
+<div id="pagina-perfil">
+    <h1 id="titulo">Suas Informações</h1>
+
+    <div id="info">
+        <div id="parte-superior">
+            <div class="info">
+                <label for="fname">Email</label><br>
+                <input class="input-user" required type="email" id="email" name="email" value="{{perfil.email}}" readonly>
+            </div>
+            <div class="info">
+                <label for="fname">Telefone</label><br>
+                <input class="input-user" required type="email" id="email" name="email" value="{{perfil.telefone}}" readonly>
+            </div>
+            <div class="info">
+                <label for="fname">Data Nascimento da Criança</label><br>
+                <input class="input-user" required type="email" id="email" name="email" value="{{perfil.dataNascimento}}" readonly>
+            </div>
+        </div>
+        <div id="parte-inferior">
+            <div class="info">
+                <label for="fname">Metodo de Notificação</label><br>
+                <input class="input-user" required type="email" id="email" name="email" value="{{perfil.tipoNotificacao}}" readonly>
+            </div>
+            <div class="info">
+                <label for="fname">Metodo de Recebimento de Senha</label><br>
+                <input class="input-user" required type="email" id="email" name="email" value="{{perfil.tipoSenha}}" readonly>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-info">
+            <img id="logo" src="../../assets/LOGO_COMPLETA.png" alt="" />
+            <a href="/configuracoes">modificar dados</a><br>
+        </div>
+    </footer>
+</div>
